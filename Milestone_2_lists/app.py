@@ -26,7 +26,7 @@ def menu():
         else:
             print("Unknown command. Please try again.")
 
-        user_input = input((USER_CHOICE))
+        user_input = input(USER_CHOICE)
 
 
 def prompt_add_book():
@@ -39,7 +39,7 @@ def prompt_add_book():
 def list_books():
     books = database.get_all_books()
     for book in books:
-        read = "YES" if book['read'] == '1' else 'NO'
+        read = "YES" if book['read'] else 'NO'
         print(f"{book['name']} by {book['author']}, read: {read}")
 
 
