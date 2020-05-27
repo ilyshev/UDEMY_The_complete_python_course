@@ -50,7 +50,7 @@ def prompt_read_book():
 
 
 def prompt_delete_book():
-    name = input("Enter the name of the book")
+    name = input("Enter the name of the book: ")
 
     database.delete_book(name)
 
